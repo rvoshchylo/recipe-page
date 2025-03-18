@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Recipes</h1>
+
+    <div class="filters">
+        <label for="difficultyFilter">Difficulty:</label>
+        <select id="difficultyFilter">
+            <option value="all">All</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+        </select>
+
+        <div class="language-switch">
+          <label>
+              <input type="radio" name="language" value="English" checked> English
+          </label>
+          <label>
+              <input type="radio" name="language" value="Spanish"> Español
+          </label>
+        </div>
+        
+        <label for="timeFilter">Max Cooking Time (minutes):</label>
+        <input type="number" id="timeFilter" placeholder="Enter minutes">
+
+        <button id="applyFilters">Apply</button>
+    </div>
+
+    <div id="recipeGrid" class="grid"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
